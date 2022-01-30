@@ -77,6 +77,10 @@ export default {
     padding-right: 0px;
   }
 
+  .header h1 {
+    line-height: 58px;
+  }
+
   .user-info-content {
     display: flex;
     align-items: center;
