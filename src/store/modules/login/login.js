@@ -28,12 +28,6 @@ export default {
                     commit("UPDATE_ERROR_STATUS", '');
                     commit("SET_IS_LOADING", true),
                         localStorage.setItem('id', JSON.stringify(data.data.id))
-                    setTimeout(() => {
-                        // router.push('/welcome')
-
-                    }, 3000)
-
-
                 })
                 .catch(e => {
                     commit("UPDATE_ERROR_STATUS", e.response.data.errorMessage);
