@@ -36,7 +36,7 @@
                     />
                     <div class="btn-container hide-500">
                       <Button
-                        type="submit"
+                        ctaType="submit"
                         @click="submitForm"
                         text="כניסה"
                         fontSize="18px"
@@ -45,7 +45,7 @@
                       />
 
                       <Button
-                        type="google"
+                        ctaType="google"
                         text="כניסה מהירה"
                         fontSize="18px"
                         height="56px"
@@ -57,7 +57,7 @@
                     </div>
                     <div class="btn-container show-500">
                       <Button
-                        type="submit"
+                        ctaType="submit"
                         @click="submitForm"
                         text="כניסה"
                         fontSize="18px"
@@ -66,7 +66,7 @@
                       />
 
                       <Button
-                        type="google"
+                        ctaType="google"
                         text="כניסה מהירה"
                         fontSize="18px"
                         height="56px"
@@ -88,7 +88,7 @@
                 <h1>אנחנו על זה!</h1>
                 <Button
                   redirectTo="Welcome"
-                  type="redirect"
+                  ctaType="redirect"
                   fontSize="18px"
                   height="56px"
                   width="200px"

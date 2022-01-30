@@ -40,14 +40,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #user-info {
-  background: rgb(45, 202, 115);
-  background: linear-gradient(
-    120deg,
-    rgba(45, 202, 115, 1) 50%,
-    rgba(255, 255, 255, 1) 50%
-  );
+  background: linear-gradient(120deg, $green-color 50%, $white 50%);
   min-height: 100vh;
   height: 100%;
   padding-top: 100px;
@@ -64,11 +59,7 @@ export default {
 
 @media (max-width: 1400px) {
   #user-info {
-    background: linear-gradient(
-      90deg,
-      rgba(45, 202, 115, 1) 50%,
-      rgba(255, 255, 255, 1) 50%
-    );
+    background: linear-gradient(90deg, $green-color 50%, $white 50%);
   }
 }
 @media (max-width: 1100px) {

@@ -6,7 +6,7 @@
     <div v-if="this.$route.path !== '/'" class="logout">
       <Button
         @click="LOGOUT"
-        type="logout"
+        ctaType="logout"
         fontSize="18px"
         height="56px"
         :width="logoutBtnWidth"

@@ -10,7 +10,7 @@
           <div class="user-cta">
             <Button
               redirectTo="UserInfo"
-              type="redirect"
+              ctaType="redirect"
               fontSize="18px"
               height="56px"
               width="200px"
@@ -39,14 +39,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #welcome {
-  background: rgb(45, 202, 115);
-  background: linear-gradient(
-    120deg,
-    rgba(45, 202, 115, 1) 50%,
-    rgba(255, 255, 255, 1) 50%
-  );
+  background: linear-gradient(120deg, $green-color 50%, $white 50%);
   min-height: 100vh;
   height: 100%;
 }
@@ -75,11 +70,7 @@ export default {
 
 @media (max-width: 1430px) {
   #welcome {
-    background: linear-gradient(
-      90deg,
-      rgba(45, 202, 115, 1) 50%,
-      rgba(255, 255, 255, 1) 50%
-    );
+    background: linear-gradient(90deg, $green-color, $white 50%);
   }
 }
 

@@ -1,14 +1,15 @@
 <template>
   <div id="button">
     <button
-      v-if="type === 'submit'"
+      v-if="ctaType === 'submit'"
       @click="$emit('click', 'submitForm')"
       :style="{ fontSize: fontSize, width: width, height: height }"
     >
       {{ text }}
     </button>
+
     <button
-      v-if="type === 'logout'"
+      v-if="ctaType === 'logout'"
       @click="$emit('click', 'logout')"
       :style="{
         fontSize: fontSize,
@@ -21,9 +22,10 @@
     >
       {{ text }}
     </button>
+
     <button
       class="google"
-      v-if="type === 'google'"
+      v-if="ctaType === 'google'"
       @click="$emit('click', 'submitForm')"
       :style="{
         fontSize: fontSize,
@@ -40,7 +42,7 @@
       /></span>
     </button>
 
-    <router-link v-if="type === 'redirect'" :to="{ name: redirectTo }">
+    <router-link v-if="ctaType === 'redirect'" :to="{ name: redirectTo }">
       <button
         :style="{
           fontSize: fontSize,
@@ -57,8 +59,8 @@
 <script>
 export default {
   props: {
+    type: String,
     text: {
-      type: String,
       require: true,
     },
 
@@ -72,7 +74,7 @@ export default {
     height: {
       require: true,
     },
-    type: {},
+    ctaType: {},
     redirectTo: {},
     bg: {},
     border: {},
@@ -86,7 +88,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  color: #fff;
+  color: $white;
   border-radius: 50px;
   background: $green-color;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
